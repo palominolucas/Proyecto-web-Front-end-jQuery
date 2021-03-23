@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="./css/violet.css">
+    <link rel="stylesheet" href="./css/chess.css">
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+
+    <!-- Mis scripts -->
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/themes.js"></script>
+    <script type="text/javascript" src="./js/scrollback.js"></script>
+    <script type="text/javascript" src="./js/chess.js"></script>
+
+
+
+    <title>Personal proyect by Lucas Palomino</title>
+</head>
+
+<body>
+
+    <div id="theme-selector">
+        <div id="toViolet">
+            <p>T</p>
+        </div>
+        <div id="toRed">
+            <p>T</p>
+        </div>
+        <div id="toLightblue">
+            <p>T</p>
+        </div>
+    </div>
+    <section id="global">
+        <!-- Cabecera -->
+        <header>
+            <div id="logo">
+                Web Proyect
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./clock.html">Clock</a></li>
+                    <li><a href="./chess.html">Chess</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+        <!-- Content -->
+
+        <section id="content">
+            
+            
+            <!-- Clock -->
+            <div id="box">
+                <div id="chess">
+                    <div class="reglas">
+                        <h1>Rules:</h1>
+                        <p>Click in GameStartoo button to begin and gamerestartoo to restart the game. <br>Click the piece to select, and click again where you want to leave it.</p>
+                    </div>
+                    <div>
+                        <table id="tablero" width="400" height="400">
+                            <tr>
+                                <td class="casillero negro" id="a8"></td>
+                                <td class="casillero blanco" id="b8"></td>
+                                <td class="casillero negro" id="c8"></td>
+                                <td class="casillero blanco" id="d8"></td>
+                                <td class="casillero negro" id="e8"></td>
+                                <td class="casillero blanco" id="f8"></td>
+                                <td class="casillero negro" id="g8"></td>
+                                <td class="casillero blanco" id="h8"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero blanco" id="a7"></td>
+                                <td class="casillero negro" id="b7"></td>
+                                <td class="casillero blanco" id="c7"></td>
+                                <td class="casillero negro" id="d7"></td>
+                                <td class="casillero blanco" id="e7"></td>
+                                <td class="casillero negro" id="f7"></td>
+                                <td class="casillero blanco" id="g7"></td>
+                                <td class="casillero negro" id="h7"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero negro" id="a6"></td>
+                                <td class="casillero blanco" id="b6"></td>
+                                <td class="casillero negro" id="c6"></td>
+                                <td class="casillero blanco" id="d6"></td>
+                                <td class="casillero negro" id="e6"></td>
+                                <td class="casillero blanco" id="f6"></td>
+                                <td class="casillero negro" id="g6"></td>
+                                <td class="casillero blanco" id="h6"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero blanco" id="a5"></td>
+                                <td class="casillero negro" id="b5"></td>
+                                <td class="casillero blanco" id="c5"></td>
+                                <td class="casillero negro" id="d5"></td>
+                                <td class="casillero blanco" id="e5"></td>
+                                <td class="casillero negro" id="f5"></td>
+                                <td class="casillero blanco" id="g5"></td>
+                                <td class="casillero negro" id="h5"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero negro" id="a4"></td>
+                                <td class="casillero blanco" id="b4"></td>
+                                <td class="casillero negro" id="c4"></td>
+                                <td class="casillero blanco" id="d4"></td>
+                                <td class="casillero negro" id="e4"></td>
+                                <td class="casillero blanco" id="f4"></td>
+                                <td class="casillero negro" id="g4"></td>
+                                <td class="casillero blanco" id="h4"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero blanco" id="a3"></td>
+                                <td class="casillero negro" id="b3"></td>
+                                <td class="casillero blanco" id="c3"></td>
+                                <td class="casillero negro" id="d3"></td>
+                                <td class="casillero blanco" id="e3"></td>
+                                <td class="casillero negro" id="f3"></td>
+                                <td class="casillero blanco" id="g3"></td>
+                                <td class="casillero negro" id="h3"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero negro" id="a2"></td>
+                                <td class="casillero blanco" id="b2"></td>
+                                <td class="casillero negro" id="c2"></td>
+                                <td class="casillero blanco" id="d2"></td>
+                                <td class="casillero negro" id="e2"></td>
+                                <td class="casillero blanco" id="f2"></td>
+                                <td class="casillero negro" id="g2"></td>
+                                <td class="casillero blanco" id="h2"></td>
+                            </tr>
+                            <tr>
+                                <td class="casillero blanco" id="a1"></td>
+                                <td class="casillero negro" id="b1"></td>
+                                <td class="casillero blanco" id="c1"></td>
+                                <td class="casillero negro" id="d1"></td>
+                                <td class="casillero blanco" id="e1"></td>
+                                <td class="casillero negro" id="f1"></td>
+                                <td class="casillero blanco" id="g1"></td>
+                                <td class="casillero negro" id="h1"></td>
+                            </tr>
+                        </table>
+                    </div>
+            
+                    <div class="pieza b" id="torreB1">&#9814;</div>
+                    <div class="pieza b" id="torreB2">&#9814;</div>
+                    <div class="pieza b" id="caballoB1">&#9816;</div>
+                    <div class="pieza b" id="caballoB2">&#9816;</div>
+                    <div class="pieza b" id="alfilB1">&#9815;</div>
+                    <div class="pieza b" id="alfilB2">&#9815;</div>
+                    <div class="pieza b" id="reinaB">&#9813;</div>
+                    <div class="pieza b" id="reyB">&#9812;</div>
+                    <div class="pieza b" id="peonB1">&#9817;</div>
+                    <div class="pieza b" id="peonB2">&#9817;</div>
+                    <div class="pieza b" id="peonB3">&#9817;</div>
+                    <div class="pieza b" id="peonB4">&#9817;</div>
+                    <div class="pieza b" id="peonB5">&#9817;</div>
+                    <div class="pieza b" id="peonB6">&#9817;</div>
+                    <div class="pieza b" id="peonB7">&#9817;</div>
+                    <div class="pieza b" id="peonB8">&#9817;</div>
+                    <div class="pieza n" id="torreN1">&#9820;</div>
+                    <div class="pieza n" id="torreN2">&#9820;</div>
+                    <div class="pieza n" id="caballoN1">&#9822;</div>
+                    <div class="pieza n" id="caballoN2">&#9822;</div>
+                    <div class="pieza n" id="alfilN1">&#9821;</div>
+                    <div class="pieza n" id="alfilN2">&#9821;</div>
+                    <div class="pieza n" id="reinaN">&#9819;</div>
+                    <div class="pieza n" id="reyN">&#9818;</div>
+                    <div class="pieza n" id="peonN1">&#9823;</div>
+                    <div class="pieza n" id="peonN2">&#9823;</div>
+                    <div class="pieza n" id="peonN3">&#9823;</div>
+                    <div class="pieza n" id="peonN4">&#9823;</div>
+                    <div class="pieza n" id="peonN5">&#9823;</div>
+                    <div class="pieza n" id="peonN6">&#9823;</div>
+                    <div class="pieza n" id="peonN7">&#9823;</div>
+                    <div class="pieza n" id="peonN8">&#9823;</div>
+                    <div>
+                        <button type="submit" id="gamestartoo">¡¡GAME STARTO!!</button>
+                        <button type="submit" id="gamerestartoo">¡¡GAME RESTARTO!!</button>
+                    </div>
+                    <div id="mouse"></div>
+                    <div class="comidas"></div>
+                </div>
+            </div>
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>¿Who am I?</h4>
+                    <img src="./img/sorcerer.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div id="login">
+                    <h4><span>Identify yourself:</span></h4>
+                    <form>
+                        <label for="name">
+                            Name
+                        </label>
+                        <input type="text" name="name" id="form_name">
+                        <label for="email">
+                            Mail
+                        </label><br>
+                        <input type="email" name="email" id="form_email">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" name="password" id="form_pass">
+                        <input type="submit" value="enter">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <footer>
+        Personal proyect by Lucas Palomino.
+
+        <a href="#" class="scrollback">Scroll Back</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding: 30px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+
+/* Logo */
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    width: 40%;
+    height: 85px;
+    float: left;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Slider imgs */
+.galeria img{
+width: 100%;
+}
+.bx-wrapper, .bx-viewport{
+    height: 250px ! important;
+}
+
+#menu{
+    font-family: Helvetica, Arial, sans-serif;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+/* Nav Bar */
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* Content */
+#content{
+    width: 97%;
+    margin: 0px auto;
+}
+
+/* Posts */
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.post{
+    padding: 7px;
+    text-align: justify;
+}
+.post h2{
+    font-size: 25px;
+    color: #333;
+}
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+
+
+/* About me, Clock & Contact */
+#box{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 3%;
+}
+#box form{
+    margin-top: 5%;
+}
+
+#acordeon h3{
+    margin-bottom: 10px;
+}
+
+
+
+/* Form */
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 35%;
+    float: right;
+}
+#sidebar h4{
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+}
+#sidebar img{
+    width: 100%;
+
+}
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+#login{
+    margin-top: 20%;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px;
+    margin-top: 5%;
+    width: 90%;
+}
+
+form input[type="submit"]{
+    text-transform: uppercase;
+    background: #eee;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgb(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+
+
+
+
+/* Themes */
+#theme-selector{
+    position: fixed;
+    top: 40%;
+    background: rgba(51,51,51,0.5);
+    width: 50px;
+    height: 100px;
+}
+#toViolet,
+#toRed,
+#toLightblue{
+    color: black;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#toViolet p,
+#toRed p,
+#toLightblue p{
+    margin-top: 3px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+#toViolet{
+    background: indigo;
+}
+#toRed{
+    background: rgb(165, 23, 4, 0.842);
+}
+#toLightblue{
+    background: rgb(28, 111, 235);
+}
+
+
+
+
+/* Scroll Back */
+.scrollback{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Reloj */
+#clock{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    width: 35%;
+    padding: 30px;
+    margin-left: 25%;
+    margin-top: 30%;
+    padding-right: 30px;
+}
+
+
+/* Contact */
+
+#reason{
+    padding-bottom: 100px;
+    padding-right: 46%;
+}
+#contact_form{
+    width: 70%;
+    margin-top: 10px;
+    font-family: Helvetica, Arial;
+}
+#contact_form label{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#name{
+    font-size: 19px;
+}
+#email{
+    font-size: 19px;
+    padding: 8px;
+    width: 90%;
+    display: block;
+    margin-top: 5px;
+    white-space: initial;
+    overflow: hidden;
+}
+#cname{
+    font-size: 19px;
+    padding: 8px;
+    width: 90%;
+    display: block;
+    margin-top: 5px;
+    white-space: initial;
+    overflow: hidden;
+}
+#reason{
+    font-size: 19px;
+}

@@ -1,0 +1,48 @@
+body{
+    background: url("../img/firetree.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    image-rendering: auto;
+}
+
+/* Logo */
+#logo{
+    background: rgba(165, 23, 4, 0.842);
+}
+
+/* Nav Bar */
+#menu ul li:hover{
+    background: rgb(165, 23, 4, 0.842);
+}
+
+
+/* Posts button */
+.button-more{
+    background: rgb(165, 23, 4, 0.842);
+}
+
+
+/* Acordeon About me */
+.ui-accordion .ui-accordion-header{
+    background: rgb(165, 23, 4, 0.842);
+    font-weight: bold;
+    color: black;
+}
+.ui-accordion .ui-accordion-header-active
+{
+    color: white;
+}
+
+
+/* Clock */
+#clock{
+    color: rgb(165, 23, 4, 0.842);
+    border: 2px dashed rgb(165, 23, 4, 0.842);
+}
+
+/* Chess */
+#chess{
+    color: rgb(165, 23, 4, 0.842);
+}

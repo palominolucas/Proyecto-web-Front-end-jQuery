@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="./css/violet.css">
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="./js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+
+    <!-- Mis scripts -->
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/posts.js"></script>
+    <script type="text/javascript" src="./js/themes.js"></script>
+    <script type="text/javascript" src="./js/scrollback.js"></script>
+
+
+
+
+    <title>Personal proyect by Lucas Palomino</title>
+</head>
+
+<body>
+
+    <div id="theme-selector">
+        <div id="toViolet">
+            <p>T</p>
+        </div>
+        <div id="toRed">
+            <p>T</p>
+        </div>
+        <div id="toLightblue">
+            <p>T</p>
+        </div>
+    </div>
+    <section id="global">
+        <!-- Cabecera -->
+        <header>
+            <div id="logo">
+                Web Proyect
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="./clock.html">Clock</a></li>
+                    <li><a href="./chess.html">Chess</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="galeria">
+            <div><img src="./img/forest.jpg" title="Forest"></div>
+            <div><img src="./img/rio.jpg" title="River"></div>
+            <div><img src="./img/mountain.jpg" title="Mountain"></div>
+        </div>
+
+        <!-- Slider -->
+        <div id="slider">
+
+        </div>
+
+        <!-- Content -->
+
+        <section id="content">
+            <div id="posts">
+                <!-- Carga posts desde un Json -->
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>¿Who am I?</h4>
+                    <img src="./img/sorcerer.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div id="login">
+                    <h4><span>Identify yourself:</span></h4>
+                    <form>
+                        <label for="name">
+                            Name
+                        </label>
+                        <input type="text" name="name" id="form_name">
+                        <label for="email">
+                            Mail
+                        </label><br>
+                        <input type="email" name="email" id="form_email">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" name="password" id="form_pass">
+                        <input type="submit" value="enter">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <footer>
+        Personal proyect by Lucas Palomino.
+
+        <a href="#" class="scrollback">Scroll Back</a>
+    </footer>
+</body>
+
+</html>
